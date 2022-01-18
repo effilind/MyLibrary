@@ -1,0 +1,303 @@
+//To Do:  add Status "Gelesen"
+//  add notes, filter funktion - Menü mit Array
+// Ideal: add click-sound, add tags (drop-down-menu) to sort books
+// Add Menu for "Leseliste", show only "Not read"
+// Lese-Statistik: how  many books/month/year
+// Develop "Reader app": Collect books
+
+/// Header Bereich
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(147, 122, 118);
+}
+.header {
+    background-color: rgb(0, 45, 4);
+    
+}
+
+.logo {
+    color: white;
+    font-family: 'Kristi', cursive;
+    font-size: 12vw;
+    text-align: center;
+    padding: 5px;
+}
+
+
+// Menü
+.addbooks {
+    background-color: rgb(147, 122, 118);
+    padding: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 20px;
+
+    
+    .menuicon {
+        color: white;
+        font-size: 8vw;
+    }
+    &.formshow {
+    height: auto;
+}
+}
+
+.formaddbook {
+    background-color: rgb(0, 45, 4);
+    color: white;
+    font-family: 'Kristi', cursive;
+    font-size: 10vw;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 300ms ease-in-out;
+    border-radius: 5px;
+        #addthisbook {
+        color: white;
+        font-family: 'Kristi', cursive;
+        font-size: 8vw;
+        background-color:rgb(225, 173, 1);
+        border-radius: 10px;
+        border-style: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        }
+}
+
+.formaddbook.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+// Bürcherregal
+
+.main {
+    background-color: rgb(147, 122, 118);
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+   flex-direction: column;
+
+}
+
+// Buchkarten
+.bookcard {
+    background-color: rgb(225, 173, 1);
+    padding: 4px;
+    border-radius: 5px;
+    margin: 2px;
+
+    .title {
+        font-family: 'Kristi', cursive;
+        color: white;
+        font-size: 8vw;
+        text-align: center;
+        padding-left: 2vw;
+        padding-right: 2vw;
+
+    }
+
+    img {
+        border-radius: 8px;
+        width: 100%;
+        height: auto;
+    }
+
+    &.notRead {
+        background-color:  rgb(0, 45, 4);
+        
+    }
+
+    .checkbox {
+        color: rgb(0, 45, 4);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .checkbox2 {
+        color: rgb(225, 173, 1);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 4vw;
+        text-align: center;
+    }
+     
+    .iconTrash {
+        padding: 1vw;
+        font-size: 4vw;
+        color: white;
+        float: right;
+
+    }
+
+    .iconRead {
+        padding: 1vw;
+        font-size: 4vw;
+        color: white;
+        float: right;
+
+    }
+
+}
+
+.paragraph {
+    padding: 0px;
+    font-size: 4vw;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+
+
+
+/// Beginn Media Query
+@media only screen and (min-width: 768px) {
+
+    .header {
+        background-color: rgb(0, 45, 4);
+        
+    }
+    
+    
+    .logo {
+        color: white;
+        font-family: 'Kristi', cursive;
+        font-size: 5vw;
+        text-align: center;
+        padding: 2vw;
+    }
+    
+    
+    // Media Query: Menü
+    .addbooks {
+        background-color: rgb(147, 122, 118);
+        padding: 1vw;
+        display: flex;
+        flex-direction: row-reverse;
+        height: 20px;
+    
+        
+        .menuicon {
+            color: white;
+            font-size: 3vw;
+            padding: 2vw;
+            padding-top: 1vw;
+        }
+        &.formshow {
+        height: auto;
+    }
+    }
+    
+    .formaddbook {
+        background-color: rgb(0, 45, 4);
+        color: white;
+        font-family: 'Kristi', cursive;
+        font-size: 3vw;
+        text-align: center;
+        padding: 3vw;
+        opacity: 0;
+        width: 50%;
+        transform: scale(0);
+        transition: all 300ms ease-in-out;
+        border-radius: 5px;
+            #addthisbook {
+            color: white;
+            font-family: 'Kristi', cursive;
+            font-size: 2vw;
+            background-color:rgb(225, 173, 1);
+            border-radius: 10px;
+            border-style: none;
+            width: 20%;
+            padding-left: 12px;
+            padding-right: 12px;
+            margin: auto;
+            }
+    }
+    
+    .formaddbook.show {
+        opacity: 1;
+        transform: scale(1);
+    }
+    
+    // Media QueryHauptbereich
+    
+    .main {
+        background-color: rgb(147, 122, 118);
+        padding: 5px;
+        display: flex;
+        flex: wrap;
+       flex-direction: row;
+    
+    }
+    
+    // Media Query Buchkarten
+    .bookcard {
+        background-color: rgb(225, 173, 1);
+        align-self: flex-start;
+        text-align: left;
+        padding: 1vw;
+        border-radius: 5px;
+        width: 20%;
+        margin: 5px;
+
+        .title {
+            font-family: 'Kristi', cursive;
+            color: white;
+            font-size: 2vw;
+    
+        }
+
+    &.notRead {
+        background-color:  rgb(0, 45, 4);
+    }
+
+    .checkbox {
+        color: rgb(0, 45, 4);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1vw;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .checkbox2 {
+        color: rgb(225, 173, 1);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1vw;
+        padding: 0px;
+        margin: 0px;
+    }
+     
+    .iconTrash {
+        padding-right: 1vw;
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: 1vw;
+        color: white;
+        float: right;
+        margin: 0px;
+    }
+    .iconRead {
+        padding-right: 1vw;
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: 1vw;
+        color: white;
+        float: right;
+        margin: 0px;
+    }
+    
+    .paragraph {
+        padding: 0;
+        font-size: 1vw;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+}
+}

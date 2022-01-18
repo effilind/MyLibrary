@@ -1,0 +1,285 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #937a76;
+}
+
+.header {
+  background-color: #002d04;
+}
+
+.logo {
+  color: white;
+  font-family: 'Kristi', cursive;
+  font-size: 12vw;
+  text-align: center;
+  padding: 5px;
+}
+
+.addbooks {
+  background-color: #937a76;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  height: 20px;
+}
+
+.addbooks .menuicon {
+  color: white;
+  font-size: 8vw;
+}
+
+.addbooks.formshow {
+  height: auto;
+}
+
+.formaddbook {
+  background-color: #002d04;
+  color: white;
+  font-family: 'Kristi', cursive;
+  font-size: 10vw;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  border-radius: 5px;
+}
+
+.formaddbook #addthisbook {
+  color: white;
+  font-family: 'Kristi', cursive;
+  font-size: 8vw;
+  background-color: #e1ad01;
+  border-radius: 10px;
+  border-style: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.formaddbook.show {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.main {
+  background-color: #937a76;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bookcard {
+  background-color: #e1ad01;
+  padding: 4px;
+  border-radius: 5px;
+  margin: 2px;
+}
+
+.bookcard .title {
+  font-family: 'Kristi', cursive;
+  color: white;
+  font-size: 8vw;
+  text-align: center;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.bookcard img {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+}
+
+.bookcard.notRead {
+  background-color: #002d04;
+}
+
+.bookcard .checkbox {
+  color: #002d04;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4vw;
+  text-align: center;
+}
+
+.bookcard .checkbox2 {
+  color: #e1ad01;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4vw;
+  text-align: center;
+}
+
+.bookcard .iconTrash {
+  padding: 1vw;
+  font-size: 4vw;
+  color: white;
+  float: right;
+}
+
+.bookcard .iconRead {
+  padding: 1vw;
+  font-size: 4vw;
+  color: white;
+  float: right;
+}
+
+.paragraph {
+  padding: 0px;
+  font-size: 4vw;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    background-color: #002d04;
+  }
+  .logo {
+    color: white;
+    font-family: 'Kristi', cursive;
+    font-size: 5vw;
+    text-align: center;
+    padding: 2vw;
+  }
+  .addbooks {
+    background-color: #937a76;
+    padding: 1vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    height: 20px;
+  }
+  .addbooks .menuicon {
+    color: white;
+    font-size: 3vw;
+    padding: 2vw;
+    padding-top: 1vw;
+  }
+  .addbooks.formshow {
+    height: auto;
+  }
+  .formaddbook {
+    background-color: #002d04;
+    color: white;
+    font-family: 'Kristi', cursive;
+    font-size: 3vw;
+    text-align: center;
+    padding: 3vw;
+    opacity: 0;
+    width: 50%;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    border-radius: 5px;
+  }
+  .formaddbook #addthisbook {
+    color: white;
+    font-family: 'Kristi', cursive;
+    font-size: 2vw;
+    background-color: #e1ad01;
+    border-radius: 10px;
+    border-style: none;
+    width: 20%;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: auto;
+  }
+  .formaddbook.show {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .main {
+    background-color: #937a76;
+    padding: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: wrap;
+        -ms-flex: wrap;
+            flex: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .bookcard {
+    background-color: #e1ad01;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    text-align: left;
+    padding: 1vw;
+    border-radius: 5px;
+    width: 20%;
+    margin: 5px;
+  }
+  .bookcard .title {
+    font-family: 'Kristi', cursive;
+    color: white;
+    font-size: 2vw;
+  }
+  .bookcard.notRead {
+    background-color: #002d04;
+  }
+  .bookcard .checkbox {
+    color: #002d04;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    padding: 0px;
+    margin: 0px;
+  }
+  .bookcard .checkbox2 {
+    color: #e1ad01;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    padding: 0px;
+    margin: 0px;
+  }
+  .bookcard .iconTrash {
+    padding-right: 1vw;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 1vw;
+    color: white;
+    float: right;
+    margin: 0px;
+  }
+  .bookcard .iconRead {
+    padding-right: 1vw;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 1vw;
+    color: white;
+    float: right;
+    margin: 0px;
+  }
+  .bookcard .paragraph {
+    padding: 0;
+    font-size: 1vw;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
